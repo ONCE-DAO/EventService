@@ -5,16 +5,16 @@
     "outDir": "../../../../../Scenarios/localhost/webroot/tla/EAM/EventService/main",
     "plugins": [
       {
-        "transform": "../../../../../../Scenarios/localhost/tla/EAM/Thinglish/Transformer/merge/3_services/transformer.cjs"
+        "transform": "../../../../../Scenarios/localhost/tla/EAM/Thinglish/Transformer/merge/3_services/transformer.cjs"
       }
     ]
   },
   "include": [
     "./src",
-    "../../../../../Scenarios/localhost",
-    "./test"
+    "../../../../../Scenarios/localhost"
   ],
   "exclude": [
+    "**/test/**/*",
     "dist",
     "node_modules",
     "../../../../../Scenarios/localhost/webroot/tla/EAM/EventService/main"
