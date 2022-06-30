@@ -1,8 +1,7 @@
-import extendedPromise from "../src/2_systems/Promise.class.mjs";
 import DefaultEvent from "../src/2_systems/DefaultEvent.class.mjs";
 import DefaultEventService from "../src/2_systems/DefaultEventService.class.mjs";
 import EventService from "../src/3_services/EventService.interface.mjs";
-import { DefaultIOR } from "ior:esm:/tla.EAM.Once[dev]";
+import { DefaultIOR, ExtendedPromise } from "ior:esm:/tla.EAM.Once[dev]";
 
 
 
@@ -33,7 +32,7 @@ describe("Default Event Service", () => {
 
         let fireResult = es.fire(TestEventNames.MY_EVENT_NAME, "myData");
 
-        expect(extendedPromise.isPromise(fireResult)).toBe(true);
+        expect(ExtendedPromise.isPromise(fireResult)).toBe(true);
         let awaitedFireResult = await fireResult;
         expect(awaitedFireResult).toStrictEqual(["Done"])
 
@@ -69,7 +68,7 @@ describe("Default Event Service", () => {
     test("fire with 2 Target Functions", async () => {
         let fireResult = es.fire(TestEventNames.MY_EVENT_NAME, "myData");
 
-        expect(extendedPromise.isPromise(fireResult)).toBe(true);
+        expect(ExtendedPromise.isPromise(fireResult)).toBe(true);
         let awaitedFireResult = await fireResult;
 
         expect(awaitedFireResult).toStrictEqual(["Done", "Done2"]);
