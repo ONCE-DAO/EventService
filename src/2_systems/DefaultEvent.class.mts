@@ -18,6 +18,4 @@ export default class DefaultEvent extends BaseThing<DefaultEvent> implements Onc
     getCallbackFunctions() {
         return this._store.discover();
     }
-
-
 }
