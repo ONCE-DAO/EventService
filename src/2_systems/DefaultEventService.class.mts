@@ -1,4 +1,4 @@
-import { BaseThing, Thing } from "ior:esm:/tla.EAM.Once[dev-merge]";
+import { BaseThing, Thing } from "ior:esm:/tla.EAM.Once[build]";
 import Store, { WeakRefStore } from "ior:esm:/tla.EAM.Once.Store[build]";
 import EventService, { OnceEvent } from "../3_services/EventService.interface.mjs";
 import DefaultEvent from "./DefaultEvent.class.mjs";

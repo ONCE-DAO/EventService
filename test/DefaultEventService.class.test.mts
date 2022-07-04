@@ -1,7 +1,7 @@
 import DefaultEvent from "../src/2_systems/DefaultEvent.class.mjs";
 import DefaultEventService from "../src/2_systems/DefaultEventService.class.mjs";
 import EventService from "../src/3_services/EventService.interface.mjs";
-import { DefaultIOR, ExtendedPromise } from "ior:esm:/tla.EAM.Once[dev-merge]";
+import { DefaultIOR, ExtendedPromise } from "ior:esm:/tla.EAM.Once[build]";
 
 
 

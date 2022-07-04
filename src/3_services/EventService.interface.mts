@@ -1,4 +1,4 @@
-import { Thing, ThingStatics } from "ior:esm:/tla.EAM.Once[dev-merge]";
+import { Thing, ThingStatics } from "ior:esm:/tla.EAM.Once[build]";
 
 export default interface EventService<EventEnum> extends Thing<EventService<any>> {
     addEventListener(eventName: EventEnum, callbackFunction: Function, eventTargetObject: Thing<any>): void;
